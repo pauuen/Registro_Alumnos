@@ -13,3 +13,17 @@ while True:
     print("8. Salir")
 
     opcion = input("Seleccione una opción: ")
+    if opcion == '1':
+        nom = input("Ingrese el nombre del alumno para Curso A: ")
+        alumA.add(nom)
+        print(f"Alumno {nom} agregado con éxito a Curso A.")
+    elif opcion == '2':
+        nom = input("Ingrese el nombre del alumno para Curso B: ")
+        alumB.add(nom)
+        print(f"Alumno {nom} agregado con éxito a Curso B.")
+    elif opcion == '3':
+        print("Alumnos en al menos un curso:", alumA | alumB)
+    elif opcion == '4':
+        print("Alumnos en ambos cursos:", alumA & alumB)
+    elif opcion == '5':
+        print("Alumnos solo en Curso A:", alumA - alumB)
