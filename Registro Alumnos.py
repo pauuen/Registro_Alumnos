@@ -27,3 +27,12 @@ while True:
         print("Alumnos en ambos cursos:", alumA & alumB)
     elif opcion == '5':
         print("Alumnos solo en Curso A:", alumA - alumB)
+    elif opcion == '6':
+        print("Alumnos solo en Curso B:", alumB - alumA)
+    elif opcion == '7':
+        print("Alumnos en un solo curso pero no en ambos:", alumA ^ alumB)
+    elif opcion == '8':
+        print("Saliendo del sistema.")
+        break
+    else:
+        print("Opción no válida. Intente de nuevo.")
